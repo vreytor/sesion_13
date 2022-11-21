@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Js</title>
+    <script src="./js/funciones.js"></script>
+</head>
+<body>
+    <section>
+        <h1>Calculadora</h1>
+        <form action="">
+            <input id="valor1" type="number">
+            <select id="selector" name="select">
+                <option value="suma">+</option>
+                <option value="resta">-</option>
+                <option value="multiplicacion">*</option>
+                <option value="division">/</option>
+            </select>
+            <input id="valor2" type="number">
+            <input type="button" id="btn_calculator" value="Calculamelo" onclick="calculamelo();"></input>
+            <div id="resultado1"></div>
+        </form>
+    </section>
+    
+    <section>
+        <h1>Calculadora 20%</h1>
+        <form action="">
+            <input id="valor20" type="number">
+            
+            <input type="button" id="btn_porcentaje" value="20%" onclick="porcentaje();"></input>
+            <div id="resultado20"></div>
+        </form>
+    </section>
+
+    <section>
+        <h1>Convierte a cm y mm</h1>
+        <form action="">
+            <input id="valormm" type="number">
+            
+            <input type="button" id="btn_mm" value="Convertir" onclick="conversor();"></input>
+            <p>Centímetros</p>
+            <div id="resultado_cm"></div>
+            <p>Milímetros</p>
+            <div id="resultado_mm"></div>
+        </form>
+    </section>  
+    
+    <section>
+        <h1>Área del Triángulo</h1>
+        <form action="">
+            <input id="valor_b" type="number" placeholder="Base">            
+            <input id="valor_h" type="number" placeholder="Altura">            
+            <input type="button" id="btn_tri" value="Calcular área" onclick="triangulo();"></input>
+            <div id="resultado_triangulo"></div>
+        </form>
+    </section>  
+   
+    <section>
+        <h1>Dolares a Soles</h1>
+        <form action="">
+            <input id="valor_dolar" type="number" placeholder="Dolares">            
+            <input type="button" id="btn_soles" value="Convertir a soles" onclick="soles();"></input>
+            <div id="resultado_soles"></div>
+        </form>
+    </section>  
+
+    <section>
+        <h1>Pulgadas a milimetros</h1>
+        <form action="">
+            <input id="valor_pulgadas" type="number" placeholder="Pulgadas">            
+            <input type="button" id="btn_pulgadas" value="Convertir a mm" onclick="pulgadas();">
+            <div id="resultado_pulgadas"></div>
+        </form>
+    </section>
+
+    <section>
+        <h1>Suma 3 cifras</h1>
+        <form action="">
+            <input id="valor_cifras" type="text" placeholder="3 cifras" maxlength="3" minlength="3">            
+            <input type="button" id="3 cifras" value="Suma cifras" onclick="cifras();">
+            <div id="resultado_cifras"></div>
+        </form>
+    </section>
+    
+    <section>
+        <h1>Porcentajes Socios</h1>
+        <input type="number" id="socios" placeholder="Añade el monto">
+        <input type="button" id="btn-socios" value="Repartir" onclick="repartija();">
+        <p>Socia A - 30%</p>
+        <div id="parte-sa"></div>
+        <p>Socia B - 20%</p>
+        <div id="parte-sb"></div>
+        <p>Socia C - 50%</p>
+        <div id="parte-sc"></div>
+    </section>
+
+    <section>
+        <h1>Calcular IGV</h1>
+        <form action="">
+            <input id="costo" type="number" placeholder="Precio base">            
+            <input type="button" id="btn-igv" value="Calcula IGV" onclick="igv();">
+            <p>IGV</p>
+            <div id="igv"></div>
+            <p>Precio Total</p>
+            <div id="total"></div>
+        </form>
+    </section>
+    
+    <section>
+        <h1>Entradas</h1>
+        <form action="">
+            <label for="">N° Entradas Generales</label>
+            <input id="generales" type="number" placeholder="Entradas Generales">            
+            <label for="">N° Entradas +65</label>
+            <input id="65" type="number" placeholder="Entradas +65">            
+            <label for="">N° Entradas Menores</label>
+            <input id="menores" type="number" placeholder="Entradas Menores">
+            
+        
+            <input type="button" id="btn-entradas" value="Calcular" onclick="entradas();">
+            <p>Recaudado en Entradas Generales</p>
+            <div id="general"></div>
+            <p>Recaudado en Entradas +65</p>
+            <div id="mayores"></div>
+            <p>Recaudado en Entradas Menores</p>
+            <div id="menor"></div>
+            
+            <p>Total Recaudado</p>
+            <div id="total_entradas"></div>
+        </form>
+    </section>
+</body>
+</html>
